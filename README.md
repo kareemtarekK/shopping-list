@@ -60,7 +60,7 @@ src/
    - Removing items ❌ updates the cart and subtotal instantly.
 
 4. **👀 Item View**  
-   - Clicking on a product image opens a detail view with price 💰 and image 🖼️.
+   - Clicking on a product image opens a detail view with price 💰 , name and image 🖼️.
 
 ---
 
@@ -71,13 +71,11 @@ src/
 git clone https://github.com/kareemtarekK/shopping-list.git
 
 # 📂 Go into the project directory
-cd veggy-shopping-list
+cd shopping-list
 
 # 📦 Install dependencies
 npm install
 
 # ▶️ Start the development server
 npm start
-
-## 📂 Project Structure
 
