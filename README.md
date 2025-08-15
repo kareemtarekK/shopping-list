@@ -68,7 +68,7 @@ src/
 
 ```bash
 # 📥 Clone the repository
-git clone https://github.com/k/veggy-shopping-list.git
+git clone https://github.com/kareemtarekK/shopping-list.git
 
 # 📂 Go into the project directory
 cd veggy-shopping-list
