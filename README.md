@@ -1,70 +1,83 @@
-# Getting Started with Create React App
+# 🛒 Veggy – Shopping List React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Veggy is a simple and interactive **🛍️ shopping list web app** built with **⚛️ React**.  
+It allows users to browse 🥦 vegetables and 🍎 fruits, search for items 🔍, view details 👀, add them to a cart 🛒, and manage their shopping list in real-time ⏳.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## ✨ Features
 
-### `npm start`
+- 🌐 **Fetch live data** of vegetables and fruits from external APIs.
+- 🔍 **Search functionality** to quickly find items by name.
+- 👀 **View details** of any fruit or vegetable before adding it to the cart.
+- ➕ **Add to cart** with adjustable quantities.
+- ❌ **Remove items** from the cart.
+- 📊 **Dynamic cart preview** with:
+  - 🛍️ Number of items
+  - 💰 Subtotal price
+- 📱 **Responsive design** for a smooth experience across devices.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🛠️ Tech Stack
 
-### `npm test`
+- **Frontend:** ⚛️ React (with Hooks)
+- **Language:** 🟨 JavaScript (ES6+)
+- **Data Fetching:** 🌐 Fetch API
+- **Styling:** 🎨 CSS (custom)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## 🌍 APIs Used
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. 🥦 **Vegetables API**  
+   [https://gist.githubusercontent.com/ChrisNjubi/1d3c5ac9974b8cac73d48a756d3b7a42/raw/0db36c0ed658d91140714c459e7a5c0570d9e537/gistfile1.txt](https://gist.githubusercontent.com/ChrisNjubi/1d3c5ac9974b8cac73d48a756d3b7a42/raw/0db36c0ed658d91140714c459e7a5c0570d9e537/gistfile1.txt)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+2. 🍎 **Fruits API**  
+   [https://gist.githubusercontent.com/amlcurran/6d174c472e2523be5f9cad7092e1d7ab/raw/fruits.json](https://gist.githubusercontent.com/amlcurran/6d174c472e2523be5f9cad7092e1d7ab/raw/fruits.json)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
+src/
+│── App.js # ⚙️ Main app logic
+│── index.js # 🚪 React entry point
+│── App.css # 🎨 Styling
+└── ...
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## ⚙️ How It Works
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. **📡 Data Fetching**  
+   - On load, the app fetches vegetable 🥦 and fruit 🍎 data from the provided APIs.
+   - Merges them into one unified list 📋.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+2. **🔍 Searching**  
+   - Filters items in real-time based on user input ⌨️.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+3. **🛍️ Cart Management**  
+   - Users can add items ➕ with custom quantities.
+   - Items already in the cart get their quantity 🔢 and price 💵 updated.
+   - Removing items ❌ updates the cart and subtotal instantly.
 
-## Learn More
+4. **👀 Item View**  
+   - Clicking on a product image opens a detail view with price 💰 and image 🖼️.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+---
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 🖥️ Installation & Usage
 
-### Code Splitting
+```bash
+# 📥 Clone the repository
+git clone https://github.com/k/veggy-shopping-list.git
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+# 📂 Go into the project directory
+cd veggy-shopping-list
 
-### Analyzing the Bundle Size
+# 📦 Install dependencies
+npm install
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+# ▶️ Start the development server
+npm start
 
-### Making a Progressive Web App
+## 📂 Project Structure
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
