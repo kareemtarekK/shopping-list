@@ -165,7 +165,7 @@ function Menu({ carts, onSetCarts, res, onSetSelectedItem }) {
           ))
         ) : (
           <div className="not-found">
-            sorry there is no <b>fruit</b> <strong>or</strong> <b>vegetables</b>
+            sorry there is no <b>fruit</b> <strong>or</strong> <b>vegetables</b>{" "}
             with this name
           </div>
         )}
@@ -179,14 +179,16 @@ function Footer() {
   return (
     <div className="footer">
       <div className="links">
-        <a href="https://kareemtarekK.github.com">see source code on github</a>
+        <a href="https://github.com/kareemtarekK/shopping-list">
+          see source code on github
+        </a>
         <span>/</span>
         <a href="mailto:kareemtarek33333@gmail.com">need any help?</a>
         <span>/</span>
         <a href="https://github.com/kareemtarekK">view my github account</a>
         <span>/</span>
         <a href="https://www.linkedin.com/in/kareem-tarek-37027b241/">
-          <b>kareem-tarek</b>
+          kareem-tarek
         </a>
       </div>
       <p>
@@ -250,6 +252,14 @@ function Type({ item, carts, onSetCarts, onSetSelectedItem }) {
           )
         : [...carts, { ...item, price: number * item.original }]
     );
+    setNumber(1);
+    e.target.children[3].className = "add added";
+    e.target.children[3].textContent = "added";
+
+    setTimeout(() => {
+      e.target.children[3].className = "add";
+      e.target.children[3].textContent = "add to cart";
+    }, 3500);
   }
 
   return (
